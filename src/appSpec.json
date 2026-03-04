@@ -1,0 +1,210 @@
+{
+  "id": "ea8be8cd-2124-4e84-9aaa-1113f86d9089",
+  "initialPrompt": "Create a website inspired by https://craftohtml.themezaa.com/demo-branding-studio.html",
+  "siteName": "craftohtml.themezaa.com",
+  "brandBook": {
+    "tones": [
+      "assertive",
+      "innovative",
+      "dynamic",
+      "client-focused",
+      "expert"
+    ],
+    "designStyle": {
+      "primaryStyle": [
+        "Bold",
+        "Modern"
+      ],
+      "supportingStyles": [
+        "High-Contrast",
+        "Dynamic Layouts",
+        "Typographic-Centric"
+      ]
+    },
+    "toneOfVoice": "Confident, energetic, bold, and professional.",
+    "graphicElements": {
+      "icons": "Clean, modern line icons that complement the bold typography without overpowering it. Consistent stroke weight.",
+      "stickers": "",
+      "illustrations": "Abstract, geometric, or bold graphic illustrations that align with the 'Bold' personality. May incorporate the primary and secondary accent colors."
+    },
+    "designSummary": "**The Disruptive Canvas: Bold Typography and Dynamic Contrast**\n\nThe Vision: This brand identity is built on unapologetic confidence and raw energy, designed to grab attention and challenge conventions. It's a synthesis of the 'Bold' personality and the dynamic, high-contrast aesthetic observed in the inspiration site. We're creating a digital space that feels like a statement, not just a website.\n\n**Execution Blueprint:**\n1. Typography as Architecture: Headlines will be the primary graphic element, large, dominant, and full of personality, often breaking the grid or overlapping other elements to create visual tension.\n2. High-Contrast Foundation: A stark palette of black, white, and a single, vibrant accent color will be used to maximize impact and ensure elements pop.\n3. Dynamic Grid Breaking: While a grid exists, elements will intentionally break its boundaries, utilizing negative space and overlap to create a sense of controlled chaos and visual intrigue.\n4. Functional, Sharp Components: Buttons and other UI elements will be sharp, direct, and functional, often using the accent color for maximum visibility and impact.",
+    "layout": {
+      "grid": {
+        "margins": "Generous margins around sections, but internal element margins can be tight to create density.",
+        "padding": "Consistent padding within containers, often 24px or 32px.",
+        "compositionApproach": "Asymmetrical grid with intentional breaking of lines and overlapping elements.",
+        "spacing": {
+          "gaps": "Base unit: 4px. Gaps are multiples of 4px, e.g., 16px (4x base unit) for standard spacing, 24px (6x base unit) for larger gaps.",
+          "rows": "Flexible row heights, often dictated by content or full-bleed sections.",
+          "columns": "12-column grid system as a base, but elements frequently extend beyond column boundaries.",
+          "compositionApproach": "Not specified"
+        }
+      },
+      "layoutDna": {
+        "contrastSpectrum": "High, utilizing stark black/white with vibrant accent colors.",
+        "densitySpectrum": "Medium to High, with strategic use of negative space for emphasis.",
+        "textVsImageEmphasis": "Typography is the primary graphic element; images support and enhance the narrative.",
+        "complexitySpectrum": "Moderate to High, with layered elements and dynamic interactions.",
+        "gridAlignmentSpectrum": "Intentionally Broken, elements often break grid lines to create dynamism.",
+        "negativeSpaceUsage": "Used strategically to frame bold typography and create visual breathing room, not for overall airiness."
+      },
+      "heroSectionLayout": "**The Bold Statement Intro**\nComposition (Tailwind Spec): Main container (h-screen grid place-items-center p-8). Headline 'Crafting Digital Excellence' (text-center text-8xl font-bold leading-tight text-primary).\nSignature Hook (Framer Motion Spec): Parent `motion.div` with `variants` for staggered text reveal. Each `motion.span` (for letters) has `initial={{ opacity: 0, y: 30 }}` and `animate={{ opacity: 1, y: 0 }}` with `transition: { duration: 0.5, ease: 'easeOut', delay: index * 0.05 }`."
+    },
+    "components": {
+      "images": "Layout Role: Integrated dynamically, often overlapping text or other elements. | Gallery Type: Asymmetrical grid or carousel layouts that emphasize visual impact over standard uniformity. Images are often full-bleed or large-format.",
+      "buttons": "Primary: background-color: #FF6036, color: #FFFFFF, border-radius: 50px, padding: 16px 32px, font-weight: 700, box-shadow: 0px 5px 20px 0px rgba(255, 96, 54, 0.3). Secondary: background-color: transparent, color: #1769FF, border: 2px solid #1769FF, border-radius: 50px, padding: 16px 32px, font-weight: 700.",
+      "containers": "Method: Whitespace and subtle background variations. Style: Sections separated by generous vertical margins (e.g., 80px) or distinct background colors. Card-like containers with subtle shadows and rounded corners (5px radius)."
+    },
+    "palette": {
+      "colors": {
+        "customColors": [
+          {
+            "name": "destructive",
+            "value": "#FF0000"
+          },
+          {
+            "name": "destructiveForeground",
+            "value": "#FFFFFF"
+          }
+        ],
+        "background": "#FFFFFF",
+        "secondary": "#1769FF",
+        "foreground": "#151515",
+        "secondaryForeground": "#FFFFFF",
+        "primaryForeground": "#FFFFFF",
+        "primary": "#FF6036"
+      },
+      "paletteUsageGuide": "The primary color (#FF6036) is for key calls to action and brand highlights. The secondary color (#1769FF) is used for links and supporting interactive elements. The background is clean white (#FFFFFF) to allow content and accent colors to stand out. Foreground text is dark (#151515) for maximum readability. Use custom colors sparingly for error states.",
+      "paletteAccessibilityNotes": "Ensure sufficient contrast between text colors and their backgrounds. The primary color (#FF6036) has good contrast against the white background. Secondary color (#1769FF) also provides good contrast. Dark foreground (#151515) on white background (#FFFFFF) meets WCAG AA standards. Test all color combinations for accessibility."
+    },
+    "typography": {
+      "headings": {
+        "font": {
+          "fontFamily": "Archivo",
+          "role": "headings",
+          "fontJustification": ""
+        },
+        "headingsAccessibilityNotes": "Ensure headings are semantically correct (h1, h2, etc.) and have sufficient size and contrast for readability. Avoid overly decorative or condensed fonts for critical headings if they compromise legibility.",
+        "headingsSimilarFonts": [],
+        "headingsUsageGuide": "Headings should be large and impactful, treated as graphic elements. Use varying weights and sizes to create hierarchy and visual interest. Ensure ample spacing around headings."
+      },
+      "paragraphs": {
+        "font": {
+          "fontFamily": "Archivo",
+          "role": "paragraphs",
+          "fontJustification": ""
+        },
+        "paragraphsUsageGuide": "Paragraph text should be clean and highly readable, providing a contrast to the bold headings. Maintain consistent line height and spacing for optimal reading flow.",
+        "paragraphsSimilarFonts": [],
+        "paragraphsAccessibilityNotes": "Paragraph font size should be at least 16px (1rem) for body text. Ensure a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text against the background."
+      },
+      "customFontFamilies": {},
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "0.8rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.02em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "sm",
+          "size": "1rem",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.03em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "base",
+          "size": "1.1rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.03em",
+          "fontWeight": "400"
+        },
+        {
+          "name": "lg",
+          "size": "1.25rem",
+          "lineHeight": "1.5",
+          "letterSpacing": "0.04em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "xl",
+          "size": "1.5rem",
+          "lineHeight": "1.4",
+          "letterSpacing": "0.04em",
+          "fontWeight": "500"
+        },
+        {
+          "name": "2xl",
+          "size": "1.75rem",
+          "lineHeight": "1.3",
+          "letterSpacing": "0.05em",
+          "fontWeight": "600"
+        },
+        {
+          "name": "3xl",
+          "size": "2rem",
+          "lineHeight": "1.3",
+          "letterSpacing": "0.05em",
+          "fontWeight": "600"
+        },
+        {
+          "name": "4xl",
+          "size": "2.5rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.06em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "5xl",
+          "size": "3rem",
+          "lineHeight": "1.2",
+          "letterSpacing": "0.06em",
+          "fontWeight": "700"
+        },
+        {
+          "name": "6xl",
+          "size": "3.5rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.07em",
+          "fontWeight": "800"
+        },
+        {
+          "name": "7xl",
+          "size": "4rem",
+          "lineHeight": "1.1",
+          "letterSpacing": "0.07em",
+          "fontWeight": "800"
+        },
+        {
+          "name": "8xl",
+          "size": "5rem",
+          "lineHeight": "1.05",
+          "letterSpacing": "0.08em",
+          "fontWeight": "900"
+        },
+        {
+          "name": "9xl",
+          "size": "6rem",
+          "lineHeight": "1.05",
+          "letterSpacing": "0.08em",
+          "fontWeight": "900"
+        }
+      ],
+      "welcomeSectionTypography": {
+        "placement": "Centered, prominent display.",
+        "implementation": "Large, bold headings using 'Archivo' font. Paragraphs below with clear hierarchy and spacing."
+      }
+    },
+    "originImagesUrls": []
+  },
+  "attachments": {
+    "contentImagesUrls": [],
+    "inspirationImagesUrls": [
+      "https://wixmp-c562ea68f10846b458285ce5.wixmp.com/scraped-screenshots/screenshot-1772659881285.webp"
+    ]
+  },
+  "status": "READY",
+  "plan": "\n\n```json\n{\n  \"sections\": [\n    {\n      \"id\": \"overview\",\n      \"title\": \"## Overview\",\n      \"content\": \"This plan creates a digital agency website showcasing services, portfolio, team expertise, and client testimonials with a modern, professional design.\"\n    },\n    {\n      \"id\": \"key-features\",\n      \"title\": \"## Key features\",\n      \"content\": \"- **View Services Listing**: Browse the agency's core service offerings including branding, marketing strategies, and product development.\\n- **View Service Details**: Access detailed information about each service offering.\\n- **View Portfolio/Case Studies**: Explore completed projects and success stories.\\n- **View Team Information**: Learn about the agency's team members and their expertise.\\n- **View Client Testimonials**: Read feedback and reviews from satisfied clients.\\n- **Submit Contact Form**: Send inquiries and project requests to the agency.\",\n      \"metadata\": [\n        { \"id\": \"view-services-listing\", \"name\": \"View Services Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-portfolio\", \"name\": \"View Portfolio/Case Studies\" },\n        { \"id\": \"view-team-information\", \"name\": \"View Team Information\" },\n        { \"id\": \"view-testimonials\", \"name\": \"View Client Testimonials\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" }\n      ]\n    },\n    {\n      \"id\": \"structure\",\n      \"title\": \"## Structure\",\n      \"content\": \"- **Header (Reusable)**: Contains site logo, navigation menu with links to Home, About, Services, Portfolio, and Contact pages.\\n- **Footer (Reusable)**: Displays company information, quick links, social media icons, and copyright notice.\\n- **Home Page**: Features hero section with agency introduction, key statistics (20K+ clients, 98% success rate, 93% growth), services overview, featured portfolio items, and client testimonials.\\n- **About Page**: Presents agency story, mission, values, team member profiles, and awards/recognition.\\n- **Services Page**: Lists all services with filtering options and detailed service descriptions accessible via detail view.\\n- **Portfolio Page**: Showcases case studies and completed projects with project details.\\n- **Contact Page**: Provides contact form, agency contact information, and office location details.\"\n    }\n  ],\n  \"apps\": [\n    {\n      \"id\": \"wix-cms\",\n      \"keyFeatures\": [\n        { \"id\": \"view-services-listing\", \"name\": \"View Services Listing\" },\n        { \"id\": \"view-service-details\", \"name\": \"View Service Details\" },\n        { \"id\": \"view-portfolio\", \"name\": \"View Portfolio/Case Studies\" },\n        { \"id\": \"view-team-information\", \"name\": \"View Team Information\" },\n        { \"id\": \"view-testimonials\", \"name\": \"View Client Testimonials\" },\n        { \"id\": \"submit-contact-form\", \"name\": \"Submit Contact Form\" }\n      ]\n    }\n  ],\n  \"version\": \"4.0.1\"\n}\n```"
+}
