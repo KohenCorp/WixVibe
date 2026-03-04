@@ -1,0 +1,30 @@
+name: Deploy TypeScript Site
+on:
+  push:
+    branches: ["main"] # Ensure this matches your main branch name
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Your Wix build outputs to the dist folder
+          path: ./dist 
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
