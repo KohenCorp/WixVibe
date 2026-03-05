@@ -19,13 +19,14 @@ jobs:
           node-version: '20'
 
       - name: Authorize Wix Registry
-        # This creates a temporary .npmrc file that uses your Secret Token
         run: |
           echo "@wix:registry=https://npm.wixpress.com" > .npmrc
           echo "//://npm.wixpress.com{{ secrets.WIX_NPM_TOKEN }}" >> .npmrc
+          echo "always-auth=true" >> .npmrc
 
       - name: Install Dependencies
-        run: npm install
+        # Added flags to prevent npm from hanging on background tasks
+        run: npm install --no-audit --no-fund --loglevel info
 
       - name: Build Project
         run: npm run build
